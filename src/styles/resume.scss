@@ -1,0 +1,378 @@
+@use './base.scss' as *;
+
+.resume-page {
+  background: $gray-900;
+  color: $gray-100;
+}
+
+.point {
+  color: $color-primary-100;
+}
+
+.section-space {
+  padding-top: 96px;
+
+  &--last {
+    padding-bottom: 120px;
+  }
+}
+
+/* animation */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-group.is-visible .reveal-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-0 { transition-delay: 0ms; }
+.delay-1 { transition-delay: 120ms; }
+.delay-2 { transition-delay: 240ms; }
+.delay-3 { transition-delay: 360ms; }
+.delay-4 { transition-delay: 480ms; }
+
+/* hero */
+.resume-hero {
+  margin-bottom: 44px;
+
+  &__title {
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: $gray-100;
+  }
+}
+
+/* layout */
+.resume-layout {
+  row-gap: 56px;
+
+  &__col {
+    grid-column: span 6;
+  }
+}
+
+.resume-section {
+  &--certificate {
+    margin-top: 68px;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: $gray-100;
+  }
+}
+
+/* timeline */
+.timeline {
+  position: relative;
+  padding-left: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: $gray-600;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 1s ease;
+  }
+}
+
+.reveal-group.is-visible .timeline::before {
+  transform: scaleY(1);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 38px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__dot {
+    position: absolute;
+    left: -24px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $color-primary-100;
+    box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.28);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background-color 0.25s ease;
+  }
+
+  &__inner {
+    padding-left: 18px;
+    transition: transform 0.25s ease;
+  }
+
+  &__heading {
+    margin: 0 0 10px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: $color-primary-100;
+    word-break: keep-all;
+  }
+
+  &__period {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    height: 30px;
+    padding: 0 16px;
+    margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.18);
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: $gray-100;
+
+    &--compact {
+      min-width: 72px;
+    }
+  }
+
+  &__role-block {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__role {
+    margin: 0 0 8px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: $gray-100;
+    word-break: keep-all;
+  }
+
+  &__desc,
+  &__edu-lines {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__desc li,
+  &__edu-lines li {
+    position: relative;
+    margin: 0 0 6px;
+    padding-left: 14px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $gray-300;
+    word-break: keep-all;
+  }
+
+  &__desc li:last-child,
+  &__edu-lines li:last-child {
+    margin-bottom: 0;
+  }
+
+  &__desc li::before,
+  &__edu-lines li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: $gray-300;
+  }
+
+  &:hover {
+    .timeline-item__dot {
+      transform: scale(1.12);
+      box-shadow: 0 0 0 8px rgba(168, 85, 247, 0.12);
+    }
+
+    .timeline-item__inner {
+      transform: translateX(4px);
+    }
+  }
+}
+
+.timeline--education {
+  .timeline-item {
+    margin-bottom: 34px;
+  }
+}
+
+.timeline--certificate {
+  .timeline-item {
+    margin-bottom: 0;
+  }
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .section-space {
+    padding-top: 72px;
+  }
+
+  .resume-hero {
+    margin-bottom: 36px;
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+
+  .resume-layout {
+    row-gap: 48px;
+
+    &__col {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .resume-section {
+    &--certificate {
+      margin-top: 56px;
+    }
+
+    &__title {
+      font-size: 40px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .timeline-item {
+    &__heading {
+      font-size: 26px;
+    }
+
+    &__period {
+      min-width: 96px;
+      height: 28px;
+      padding: 0 14px;
+      font-size: 15px;
+    }
+
+    &__role {
+      font-size: 18px;
+    }
+
+    &__desc li,
+    &__edu-lines li {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-space {
+    padding-top: 56px;
+
+    &--last {
+      padding-bottom: 80px;
+    }
+  }
+
+  .resume-hero {
+    margin-bottom: 28px;
+
+    &__title {
+      font-size: 36px;
+    }
+  }
+
+  .resume-layout {
+    row-gap: 40px;
+  }
+
+  .resume-section {
+    &--certificate {
+      margin-top: 44px;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .timeline {
+    padding-left: 20px;
+
+    &::before {
+      left: 4px;
+    }
+  }
+
+  .timeline-item {
+    margin-bottom: 28px;
+
+    &__dot {
+      left: -20px;
+      width: 10px;
+      height: 10px;
+      top: 6px;
+    }
+
+    &__inner {
+      padding-left: 14px;
+    }
+
+    &__heading {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    &__period {
+      min-width: 82px;
+      height: 24px;
+      padding: 0 10px;
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+
+    &__role-block {
+      margin-bottom: 16px;
+    }
+
+    &__role {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    &__desc li,
+    &__edu-lines li {
+      font-size: 14px;
+      line-height: 1.65;
+      padding-left: 12px;
+    }
+  }
+}

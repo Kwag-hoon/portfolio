@@ -1,0 +1,11 @@
+@use './base.scss' as *;
+
+h2 {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.03em;
+  color: $gray-100;
+  margin: 48px 24px;
+}
