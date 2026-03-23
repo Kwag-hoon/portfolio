@@ -6,6 +6,13 @@
 /* =========================================
    1. Design Tokens
 ========================================= */
+@font-face {
+  font-family: 'KoreaInstituteOfMachineryAndMaterials';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
 $color-primary-100: #9051ff;
 $color-primary-200: #3f51b5;
 
@@ -33,6 +40,7 @@ $bg-muted: rgba(255, 255, 255, 0.06);
 
 $border-color: rgba(255, 255, 255, 0.1);
 
+$font-family-kimm: 'KoreaInstituteOfMachineryAndMaterials';
 $font-family-base:
   "Pretendard",
   "Inter",

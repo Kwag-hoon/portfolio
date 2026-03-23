@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import PingHero from "../../components/projectDetail/PingHero";
+import "../../styles/pingdetail.scss";
 
-function PingDetail(props) {
+function PingDetail() {
   return (
-    <main>
-      <br />
-      <br />
-      <h2>COMMING SOON</h2>
+    <main className="ping-detail">
+      <PingHero />
+
+      {/* 아래에 Overview, Problem, Workflow ... 이어서 추가 */}
     </main>
   );
 }

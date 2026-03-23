@@ -4,6 +4,7 @@ export const workExperience = [
   {
     company: '주식회사 유리원',
     period: '23.04 - 24.03',
+    
     roles: [
       {
         title: 'UI/UX 기획 · 프론트엔드 기반 웹 구축',
@@ -89,7 +90,7 @@ export const workExperience = [
 export const education = [
   {
     title: '그린컴퓨터아트학원  종로',
-    period: '25.03 - 25.06',
+    period: '25.08 - 26.02',
     lines: [
       '[프로젝트기반]프론트엔드 개발자 양성',
       'Figma/React/Next.js/PHP/Mysql/chatGPT',

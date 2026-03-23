@@ -11,7 +11,7 @@ export default function Footer() {
               className="footer__email"
               href="mailto:sugardity07@gmail.com"
             >
-              sugardity07@gmail.com
+              sugarcity07@gmail.com
             </a>
 
             <p className="footer__copy">
