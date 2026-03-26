@@ -179,7 +179,7 @@
     font-size: 20px;
     font-weight: 700;
     color: $gray-700;
-    
+
   }
 
   &__meta-value {
@@ -200,7 +200,7 @@
   &__button {
     display: inline-block;
     padding: 12px 32px;
-    
+
     border: 1px solid $gray-700;
     color: $gray-700;
     background: transparent;
@@ -215,6 +215,7 @@
     }
   }
 }
+
 /* =========================
    TABLET (1024 이하)
 ========================= */
@@ -431,9 +432,10 @@
   &__card--dark {
     background: $gray-700;
 
-    .ping-problem-solution__card-title{
+    .ping-problem-solution__card-title {
       color: $gray-100;
     }
+
     .ping-problem-solution__card-desc {
       color: $gray-400;
     }
@@ -532,7 +534,7 @@
       font-size: 28px;
       rotate: -90deg;
       flex: none;
-      
+
     }
 
     &__card {
@@ -664,15 +666,15 @@
     font-size: 20px;
     color: $gray-400;
     margin-bottom: 12px;
-    
+
   }
 
   /* 제목 */
   &__title {
     // font-family: "kimm", sans-serif;
-    width: calc(100% );
+    width: calc(100%);
     border-top: 1px solid $gray-400;
-    
+
     font-size: 24px;
     font-weight: 600;
     color: $gray-700;
@@ -764,7 +766,7 @@
     font-size: 30px;
     font-weight: 600;
     color: $gray-500;
-    
+
     span {
       color: #9051ff;
     }
@@ -846,10 +848,11 @@
       color: $gray-100;
       padding: 8px 10px;
       font-size: 16px;
-      
+
     }
   }
 }
+
 @media (max-width: 1024px) {
   .ping-ia {
     padding: 96px 0;
@@ -943,6 +946,814 @@
       min-height: 34px;
       padding: 7px 10px;
       font-size: 12px;
+    }
+  }
+}
+
+/* =========================
+   Reflection
+========================= */
+.project-reflection {
+  padding: 120px 0;
+  background: $gray-900;
+
+  &__container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 36px;
+    box-sizing: border-box;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: $gray-100;
+
+    span {
+      color: #9051ff;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 24px;
+    align-items: center;
+
+  }
+
+  &__copy {
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      font-weight: 400;
+      color: $gray-100;
+      white-space: pre-line;
+      word-break: keep-all;
+    }
+  }
+
+  &__image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    max-width: 697px;
+    aspect-ratio: 697 / 413;
+    object-fit: contain;
+  }
+
+  /* 버튼 전용 독립 영역 */
+  &__nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    min-width: 148px;
+    height: 52px;
+    padding: 0 20px;
+    border: 1px solid rgba(243, 244, 246, 0.28);
+    background: transparent;
+    color: $gray-100;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(243, 244, 246, 0.08);
+      border-color: rgba(243, 244, 246, 0.52);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__button-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+    flex: 0 0 18px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .project-reflection {
+    padding: 96px 0;
+
+    &__container {
+      padding: 0 32px;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__copy p {
+      font-size: 17px;
+    }
+
+    &__image {
+      max-width: 620px;
+    }
+
+    &__nav {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .project-reflection {
+    padding: 72px 0;
+
+    &__container {
+      padding: 0 20px;
+    }
+
+    &__header {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__content {
+      gap: 28px;
+    }
+
+    &__copy p {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    &__nav {
+      margin-top: 28px;
+    }
+
+    &__button {
+      min-width: 132px;
+      height: 48px;
+      padding: 0 18px;
+      font-size: 14px;
+    }
+
+    &__button-icon {
+      width: 16px;
+      height: 16px;
+      flex-basis: 16px;
+    }
+  }
+}
+
+/* =========================
+  workflow-hero
+========================= */
+.ping-workflow-hero {
+  padding: 120px 0;
+  background: $gray-900;
+
+  &__container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 36px;
+    box-sizing: border-box;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: center;
+  }
+
+  /* 왼쪽 5컬럼 */
+  &__copy {
+    grid-column: 1 / 6;
+    text-align: left;
+  }
+
+  &__title {
+    margin: 0 0 64px;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: $gray-50;
+    word-break: keep-all;
+
+    span {
+      color: #9051ff;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    max-width: 360px;
+    font-size: 24px;
+    line-height: 1.75;
+    font-weight: 500;
+    color: $gray-50;
+    word-break: keep-all;
+    white-space: pre-line;
+
+    em {
+      font-style: normal;
+      color: #9051ff;
+    }
+  }
+
+  /* 오른쪽 7컬럼 */
+  &__diagram {
+    grid-column: 6 / 13;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 900 / 760;
+  }
+
+  &__base {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__marker {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      pointer-events: none;
+    }
+
+    &:hover,
+    &.is-active {
+      transform: scale(1.08);
+    }
+  }
+&__marker-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16% 12%;
+    text-align: center;
+    color: $gray-50;
+    pointer-events: none;
+    white-space: pre-line;
+  }
+
+  &__marker-id {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    color: #9051ff;
+  }
+
+  &__marker-title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 500;
+    word-break: keep-all;
+  }
+
+  &__marker-desc {
+    display: block;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 400;
+    color: rgba(243, 244, 246, 0.84);
+    word-break: keep-all;
+  }
+
+  /* 위치값:마커 위치는 실제 svg 비율 보고 미세조정 */
+  &__marker--a {
+    width: 40.3%;
+    top: 8.3%;
+    left: 6%;
+  }
+
+  &__marker--b {
+    width: 40.3%;
+    top: 4%;
+    left: 30%;
+  }
+
+  &__marker--c {
+    width: 40.3%;
+    top: 8.6%;
+    right: 6%;
+  }
+
+  &__marker--d {
+    width: 40.3%;
+    top: 51.4%;
+    right: 6%;
+  }
+
+  &__marker--e {
+    width: 40.3%;
+    bottom: 4%;
+    left: 30.2%;
+  }
+
+  &__marker--f {
+    width: 40.3%;
+    top: 51.4%;
+    left: 6.5%;
+  }
+}
+.ping-workflow-hero {
+  &__marker-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16% 12%;
+    text-align: center;
+    color: $gray-50;
+    pointer-events: none;
+    white-space: pre-line;
+  }
+
+
+  /* B 텍스트 위치 미세조정 */
+  &__marker-content--b {
+    transform: translateY(-55px);
+  }
+
+  /* D 텍스트 위치 미세조정 */
+  &__marker-content--d {
+    transform: translateX(5px) translateY(-30px);
+  }
+
+  /* E 텍스트 위치 미세조정 */
+  &__marker-content--e {
+    transform: translateY(40px);
+  }
+
+  /* F 텍스트 위치 미세조정 */
+  &__marker-content--f {
+    transform: translateX(-5px) translateY(-40px);
+  }
+}
+@media (max-width: 1024px) {
+  .ping-workflow-hero {
+    padding: 96px 0;
+
+    &__container {
+      padding: 0 32px;
+    }
+
+    &__grid {
+      row-gap: 40px;
+    }
+
+    &__copy {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 28px;
+      font-size: 30px;
+    }
+
+    &__desc {
+      max-width: 100%;
+      margin: 0 auto;
+      font-size: 20px;
+    }
+
+    &__diagram {
+      grid-column: 2 / 12;
+    }
+    &__marker-id {
+      font-size: 24px;
+    }
+
+    &__marker-title {
+      font-size: 16px;
+    }
+
+    &__marker-desc {
+      font-size: 12px;
+      line-height: 1.45;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ping-workflow-hero {
+    padding: 72px 0;
+
+    &__container {
+      padding: 0 20px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    &__diagram {
+      // grid-column: 2 / 12;
+      grid-column: 1 / -1;
+      // aspect-ratio: 1 / 1;
+    }
+
+    &__marker:hover,
+    &__marker.is-active {
+      transform: scale(1.05);
+    }
+    &__marker-id {
+      font-size: 24px;
+    }
+
+    &__marker-title {
+      font-size: 16px;
+    }
+
+    &__marker-desc {
+      font-size: 12px;
+      line-height: 1.45;
+    }
+  }
+}
+
+/* =========================
+  workflow-detail
+========================= */
+.ping-workflow-detail {
+  padding: 120px 0;
+  background: $gray-100;
+
+  &__container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 36px;
+    box-sizing: border-box;
+  }
+
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: start;
+    margin-bottom: 72px;
+    scroll-margin-top: 120px;
+  }
+
+  &__image-wrap {
+    grid-column: 1 / 7;
+    position: relative;
+  }
+
+  &__image-wrap--stack {
+    min-height: 620px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 16px 28px rgba(17, 24, 39, 0.14);
+  }
+
+ &__image-wrap--e {
+  position: relative;
+  min-height: 520px;
+}
+
+&__image--left {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  box-shadow: 0 16px 28px rgba(17, 24, 39, 0.14);
+}
+
+&__image--right {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  bottom: -40px;
+  right: 0;
+  width: 100%;
+  box-shadow: 0 20px 36px rgba(17, 24, 39, 0.18);
+}
+  &__content {
+    grid-column: 7 / 13;
+    position: relative;
+    padding-top: 8px;
+  }
+
+  &__content--bottom {
+    align-self: center;
+    padding-top: 80px;
+  }
+
+  &__headline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+
+    h4 {
+      margin: 0;
+      font-size: 40px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: $gray-700;
+      word-break: keep-all;
+    }
+  }
+
+  &__headline--plain {
+    margin-bottom: 20px;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex: 0 0 12px;
+  }
+
+  &__dot--pink {
+    background: #FF6E79;
+  }
+
+  &__desc {
+    margin: 0;
+    max-width: 520px;
+    font-size: 18px;
+    line-height: 1.9;
+    font-weight: 500;
+    color: $gray-700;
+    word-break: keep-all;
+  }
+
+  &__subgroup {
+    position: relative;
+    margin-top: 44px;
+  }
+
+  &__subline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    margin-bottom: 12px;
+  }
+
+  &__subline--gray::before {
+    content: "";
+    position: absolute;
+    left: -120px;
+    right: 0;
+    top: 50%;
+    border-top: 1px dashed $gray-700;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  &__subline-text {
+    position: relative;
+    z-index: 1;
+    padding-left: 8px;
+    background: $gray-100;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $gray-700;
+  }
+
+  &__subdot {
+    position: relative;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 50%;
+    flex: 0 0 12px;
+    background: $gray-700;
+  }
+
+  &__subdesc {
+    margin: 0;
+    padding-left: 20px;
+    max-width: 420px;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: $gray-600;
+    word-break: keep-all;
+  }
+
+  /* 섹션별 위치 보정 */
+  &__section--b {
+    .ping-workflow-detail__headline--pink {
+      position: relative;
+      left: -14px;
+    }
+
+    .ping-workflow-detail__subline--gray {
+      margin-top: 120px;
+    }
+  }
+
+  &__section--c {
+    .ping-workflow-detail__headline--pink {
+      position: relative;
+      left: -14px;
+    }
+
+    .ping-workflow-detail__subgroup--c1 {
+      margin-top: 52px;
+    }
+
+    .ping-workflow-detail__subgroup--c2 {
+      margin-top: 44px;
+    }
+  }
+
+  &__section--d {
+    .ping-workflow-detail__headline--pink {
+      position: relative;
+      left: -14px;
+    }
+
+    .ping-workflow-detail__subgroup--d1 {
+      margin-top: 64px;
+    }
+  }
+
+  &__section--e {
+    margin-bottom: 0;
+
+    .ping-workflow-detail__content {
+      grid-column: 7 / 13;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .ping-workflow-detail {
+    padding: 96px 0;
+
+    &__container {
+      padding: 0 32px;
+    }
+
+    &__section {
+      margin-bottom: 56px;
+    }
+
+    &__image-wrap,
+    &__content {
+      grid-column: 1 / -1;
+    }
+
+    &__content {
+      padding-top: 28px;
+    }
+
+    &__content--bottom {
+      padding-top: 28px;
+    }
+
+    &__headline {
+      h4 {
+        font-size: 32px;
+      }
+    }
+
+    &__desc {
+      max-width: 100%;
+      font-size: 17px;
+    }
+
+    &__subline--gray::before {
+      left: 0;
+    }
+
+    &__subdesc {
+      max-width: 100%;
+      padding-left: 20px;
+      font-size: 15px;
+    }
+
+    &__image-wrap--stack {
+      min-height: auto;
+    }
+
+    &__section--b,
+    &__section--c,
+    &__section--d {
+      .ping-workflow-detail__headline--pink {
+        left: 0;
+      }
+    }
+
+    &__section--b .ping-workflow-detail__subline--gray {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ping-workflow-detail {
+    padding: 72px 0;
+
+    &__container {
+      padding: 0 20px;
+    }
+
+    &__section {
+      margin-bottom: 44px;
+      row-gap: 20px;
+    }
+
+    &__headline {
+      gap: 10px;
+      margin-bottom: 18px;
+
+      h4 {
+        font-size: 24px;
+        line-height: 1.4;
+      }
+    }
+
+    &__dot,
+    &__subdot {
+      width: 10px;
+      height: 10px;
+      flex-basis: 10px;
+    }
+
+    &__desc {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    &__subline-text {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    &__subdesc {
+      padding-left: 14px;
+      font-size: 14px;
+      line-height: 1.75;
     }
   }
 }

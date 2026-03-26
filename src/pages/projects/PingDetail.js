@@ -4,7 +4,11 @@ import PingOverview from "../../components/projectDetail/PingOverview";
 import PingProblemSolution from "../../components/projectDetail/PingProblemSolution";
 import DetailTripleSection from "../../components/projectDetail/DetailTripleSection";
 import PingIA from "../../components/projectDetail/PingIA";
+import PingWorkflowHero from "../../components/projectDetail/PingWorkflowHero";
+import PingWorkflowDetail from "../../components/projectDetail/PingWorkflowDetail";
 
+import ProjectReflection from "../../components/projectDetail/ProjectReflection";
+import pingProjectImage from "../../assets/projects/ping/ping-Project.png";
 import "../../styles/pingdetail.scss";
 
 function PingDetail() {
@@ -44,7 +48,13 @@ function PingDetail() {
     },
   ];
 
+  const reflectionText = `PING 프로젝트를 진행하면서 디자인 피드백이 단순히 의견을 주고받는 것이 아니라, 체계적으로 관리되고 기록될 때 비로소 성장의 자산이 된다는 점을 확인했습니다. 특히 PIN 기반 피드백 시스템을 설계하면서 '맥락'의 중요성을 다시 한번 확인했습니다. 정확한 위치, 시점, 의도가 함께 기록될 때 피드백은 단순한 코멘트를 넘어 학습 가능한 데이터가 됩니다.  
 
+  사용자 리서치 과정에서 디자이너들이 피드백을 받는 것보다 '관리하는 것'에 더 큰 어려움을 겪고 있다는 점을 발견했고, 이를 해결하기 위해 이슈 기반 아카이빙과 타임라인 기록 시스템을 설계했습니다. 다만, 초기 사용자에게 PIN을 찍는 행위 자체가 낯설 수 있다는 점을 고려하여, 온보딩 프로세스와 가이드 설계에 더 많은 시간을 할애해야 했습니다.
+
+ 이 프로젝트를 통해 좋은 UX 설계는 사용자의 현재 행동을 개선하는 것뿐만 아니라, 데이터가 쌓였을 때 미래에 제공할 수 있는 가치까지 고려해야 한다는 것을 배웠습니다. 축적된 피드백 데이터를 기반으로 개인 성장 지표를 시각화하고, 디자인 패턴을 학습하는 기능까지 확장할 수 있는 구조를 설계한 것이, 이 프로젝트의 핵심 성과였습니다.
+
+`;
 
 
   return (
@@ -52,7 +62,7 @@ function PingDetail() {
       <PingHero />
       <PingOverview />
       <PingProblemSolution />
-       {/* Core Value */}
+      {/* Core Value */}
       <DetailTripleSection
         eyebrow="Core Value"
         items={coreValueData}
@@ -67,8 +77,24 @@ function PingDetail() {
       />
       {/* IA */}
       <PingIA />
-     
+      {/* Workflow Hero */}
+      <PingWorkflowHero />
+      {/* Workflow Detail */}
+      <PingWorkflowDetail />
 
+
+
+
+
+
+
+      <ProjectReflection
+        title="Reflection"
+        body={reflectionText}
+        image={pingProjectImage}
+        imageAlt="PING 프로젝트 회고 대표 이미지"
+        listHref="/projects"
+      />
     </main>
   );
 }
