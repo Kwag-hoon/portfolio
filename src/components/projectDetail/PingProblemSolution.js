@@ -1,30 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
-
+import React from "react";
+import useScrollReveal from "../../hooks/useScrollReveal";
 function PingProblemSolution() {
-  const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const target = sectionRef.current;
-    if (!target) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(target);
-        }
-      },
-      {
-        threshold: 0.6,
-        rootMargin: "0px 0px -20px 0px",
-      }
-    );
-
-    observer.observe(target);
-
-    return () => observer.disconnect();
-  }, []);
+  const [sectionRef, isVisible] = useScrollReveal({
+      threshold: 0.5,
+      rootMargin: "0px 0px -20px 0px",
+    });
 
   return (
     <section
@@ -34,14 +14,14 @@ function PingProblemSolution() {
       <div className="ping-problem-solution__container">
         <div className="ping-problem-solution__grid">
           {/* 중앙 라벨 */}
-          <div className="ping-problem-solution__eyebrow-wrap">
+          <div className="ping-problem-solution__eyebrow-wrap reveal">
             <p className="ping-problem-solution__eyebrow">
               Problem &amp; Solution<span>.</span>
             </p>
           </div>
 
           {/* 제목 */}
-          <div className="ping-problem-solution__heading">
+          <div className="ping-problem-solution__heading reveal reveal--delay-1">
             <h3 className="ping-problem-solution__title">
               왜 이 서비스를 만들었는가?
             </h3>
@@ -49,7 +29,7 @@ function PingProblemSolution() {
 
           {/* pairs */}
           <div className="ping-problem-solution__pairs">
-            <div className="ping-problem-solution__pair ping-reveal ping-reveal--delay-1">
+            <div className="ping-problem-solution__pair reveal reveal--delay-1">
               <article className="ping-problem-solution__card ping-problem-solution__card--light">
                 <h4 className="ping-problem-solution__card-title">결과 중심의 전시</h4>
                 <p className="ping-problem-solution__card-desc">
@@ -71,7 +51,7 @@ function PingProblemSolution() {
               </article>
             </div>
 
-            <div className="ping-problem-solution__pair ping-reveal ping-reveal--delay-2">
+            <div className="ping-problem-solution__pair reveal reveal--delay-2">
               <article className="ping-problem-solution__card ping-problem-solution__card--light">
                 <h4 className="ping-problem-solution__card-title">
                   단발적이고 휘발되는 피드백
@@ -96,7 +76,7 @@ function PingProblemSolution() {
               </article>
             </div>
 
-            <div className="ping-problem-solution__pair ping-reveal ping-reveal--delay-3">
+            <div className="ping-problem-solution__pair reveal reveal--delay-3">
               <article className="ping-problem-solution__card ping-problem-solution__card--light">
                 <h4 className="ping-problem-solution__card-title">학습 구조의 부재</h4>
                 <p className="ping-problem-solution__card-desc">

@@ -6,7 +6,7 @@ import DetailTripleSection from "../../components/projectDetail/DetailTripleSect
 import PingIA from "../../components/projectDetail/PingIA";
 import PingWorkflowHero from "../../components/projectDetail/PingWorkflowHero";
 import PingWorkflowDetail from "../../components/projectDetail/PingWorkflowDetail";
-
+import PingAdminSystem from "../../components/projectDetail/PingAdminSystem";
 import ProjectReflection from "../../components/projectDetail/ProjectReflection";
 import pingProjectImage from "../../assets/projects/ping/ping-Project.png";
 import "../../styles/pingdetail.scss";
@@ -81,12 +81,8 @@ function PingDetail() {
       <PingWorkflowHero />
       {/* Workflow Detail */}
       <PingWorkflowDetail />
-
-
-
-
-
-
+      {/* Admin System */}
+      <PingAdminSystem />
 
       <ProjectReflection
         title="Reflection"

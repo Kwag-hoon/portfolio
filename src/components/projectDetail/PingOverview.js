@@ -1,8 +1,16 @@
 import React from "react";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 function PingOverview() {
+  const [sectionRef, isVisible] = useScrollReveal({
+    threshold: 0.6,
+    rootMargin: "0px 0px -20px 0px",
+  });
   return (
-    <section className="ping-overview">
+    <section
+      ref={sectionRef}
+      className={`ping-overview ${isVisible ? "is-visible" : ""}`}
+    >
       <div className="ping-overview__container">
         <div className="ping-overview__grid">
 
@@ -14,7 +22,7 @@ function PingOverview() {
           </div>
 
           {/* 본문 (12컬럼 시작선 기준) */}
-          <div className="ping-overview__content">
+          <div className="ping-overview__content reveal reveal--delay-1">
 
             <h3 className="ping-overview__title">
               PING 문제 유형 기반 디자인 피드백 커뮤니티
@@ -62,7 +70,7 @@ function PingOverview() {
           </div>
 
           {/* 버튼 */}
-          <div className="ping-overview__cta">
+          <div className="ping-overview__cta reveal reveal--delay-2">
             <a
               href="https://www.ping.it.kr/"
               target="_blank"

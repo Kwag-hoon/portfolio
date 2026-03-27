@@ -1,12 +1,19 @@
 import React from "react";
-
+import useScrollReveal from "../../hooks/useScrollReveal";
 function PingIA() {
+  const [sectionRef, isVisible] = useScrollReveal({
+    threshold: 0.6,
+    rootMargin: "0px 0px -20px 0px",
+  });
   return (
-    <section className="ping-ia">
+    <section
+      ref={sectionRef}
+      className={`ping-ia ${isVisible ? "is-visible" : ""}`}
+    >
       <div className="ping-ia__container">
 
         {/* 타이틀 */}
-        <div className="ping-ia__header">
+        <div className="ping-ia__header reveal">
           <h3 className="ping-ia__title">
             IA<span>.</span>
           </h3>
@@ -19,16 +26,16 @@ function PingIA() {
         <div className="ping-ia__tree">
 
           {/* MAIN */}
-          <div className="ping-ia__main">MAIN</div>
+          <div className="ping-ia__main reveal reveal--delay-1">MAIN</div>
 
           {/* 로그인 */}
-          <div className="ping-ia__auth">
+          <div className="ping-ia__auth reveal reveal--delay-2">
             <span className="ping-ia__auth-item">로그인</span>
             <span className="ping-ia__auth-item">회원가입</span>
           </div>
 
           {/* 하위 메뉴 */}
-          <div className="ping-ia__branches">
+          <div className="ping-ia__branches reveal reveal--delay-3">
 
             {/* Archive */}
             <div className="ping-ia__branch">

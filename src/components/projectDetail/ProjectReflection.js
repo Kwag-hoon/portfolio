@@ -1,7 +1,9 @@
 import React from "react";
+import useScrollReveal from "../../hooks/useScrollReveal";
 import gridIcon from "../../assets/icon/grid-outline.svg";
 
 function ProjectReflection({
+
   title = "Reflection",
   body = "",
   image,
@@ -21,17 +23,24 @@ function ProjectReflection({
     </>
   );
 
+  const [sectionRef, isVisible] = useScrollReveal({
+    threshold: 0.6,
+    rootMargin: "0px 0px -20px 0px",
+  });
   return (
-    <section className="project-reflection">
+    <section
+      ref={sectionRef}
+      className={`project-reflection ${isVisible ? "is-visible" : ""}`}
+    >
       <div className="project-reflection__container">
-        <div className="project-reflection__header">
+        <div className="project-reflection__header reveal">
           <h3 className="project-reflection__title">
             {title}
             <span>.</span>
           </h3>
         </div>
 
-        <div className="project-reflection__content">
+        <div className="project-reflection__content reveal reveal--delay-1">
           <div className="project-reflection__copy">
             <p>{body}</p>
           </div>
@@ -45,7 +54,7 @@ function ProjectReflection({
           </div>
         </div>
 
-        <div className="project-reflection__nav">
+        <div className="project-reflection__nav reveal reveal--delay-2">
           {listHref ? (
             <a href={listHref} className="project-reflection__button">
               {buttonContent}
