@@ -36,7 +36,7 @@ const processItems = [
     title: "Design",
     subtitle: "화면 설계 및 UI 구체화",
     desc: "설계한 구조를 기반으로 화면 단위의 UI를 구체화하고 사용자 경험을 시각적으로 정리합니다.",
-    details: ["Wireframe", "UI Kit", "FigJam", "디자인 시스템"],
+    details: ["Wireframe", "UI Kit", "FigJam", "Figma","디자인 시스템"],
     image: process03,
     align: "left",
   },

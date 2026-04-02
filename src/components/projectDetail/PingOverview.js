@@ -3,7 +3,7 @@ import useScrollReveal from "../../hooks/useScrollReveal";
 
 function PingOverview() {
   const [sectionRef, isVisible] = useScrollReveal({
-    threshold: 0.6,
+    threshold: 0.5,
     rootMargin: "0px 0px -20px 0px",
   });
   return (
@@ -63,7 +63,7 @@ function PingOverview() {
               <div className="ping-overview__meta-row">
                 <span className="ping-overview__meta-label">PERIOD</span>
                 <span className="ping-overview__meta-value">
-                  2025.01.05 - 2025.02.13
+                  2026.01.05 - 2026.02.13
                 </span>
               </div>
             </div>

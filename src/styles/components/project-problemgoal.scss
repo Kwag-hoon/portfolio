@@ -1,0 +1,157 @@
+@use "../base.scss" as *;
+
+.project-problem-goal {
+  padding: 120px 0;
+  background: $gray-100;
+
+  &__container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 36px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 80px;
+
+    span {
+      color: $color-primary-100;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__problem {
+    width: 100%;
+    min-height: 180px;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: $gray-600;
+      line-height: 1.6;
+    }
+  }
+
+  &__arrow {
+    margin: 24px 0;
+    font-size: 20px;
+    color: $gray-500;
+    line-height: 1;
+  }
+
+  &__goal {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid $color-primary-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    span {
+      font-size: 14px;
+      line-height: 1.5;
+      padding: 0 12px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-problem-goal {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .project-problem-goal {
+    padding: 72px 0;
+
+    &__container {
+      padding: 0 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr);
+      align-items: center;
+      gap: 12px;
+    }
+
+    &__problem {
+      min-height: 148px;
+      padding: 20px 16px;
+      border-radius: 10px;
+
+      h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+    }
+
+    &__arrow {
+      margin: 0;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__goal {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 148px;
+      height: auto;
+      justify-self: center;
+      border-width: 5px;
+
+      span {
+        font-size: 13px;
+        line-height: 1.45;
+        padding: 0 10px;
+      }
+    }
+  }
+}

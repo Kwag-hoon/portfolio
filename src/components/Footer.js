@@ -13,10 +13,8 @@ export default function Footer() {
             >
               sugarcity07@gmail.com
             </a>
+            <p>본 사이트는 상업용 목적이 아닌, 개인 포트폴리오용으로 제작되었습니다. 이미지와 내용은 개인적으로 제작되었습니다.</p>
 
-            <p className="footer__copy">
-              Copyright 2026 Kwag Hoon. All rights reserved.
-            </p>
           </div>
 
           <div className="footer__right">
@@ -27,6 +25,10 @@ export default function Footer() {
             >
               이력서 다운로드
             </a>
+            <p className="footer__copy">
+              Copyright 2026 Kwag Hoon. All rights reserved.
+            </p>
+
           </div>
 
         </div>

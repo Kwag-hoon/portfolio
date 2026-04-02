@@ -3,7 +3,7 @@
 export const workExperience = [
   {
     company: '주식회사 유리원',
-    period: '23.04 - 24.03',
+    period: '23.04 - 24.03, 25.03 - 25.06',
     
     roles: [
       {
