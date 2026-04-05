@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectHero from "../../components/project/ProjectHero";
 import AnsanOverview from "../../components/ansanDetail/AnsanOverview";
 import ProjectProblemGoal from "../../components/project/ProjectProblemGoal";
+import AnsanIa from "../../components/ansanDetail/AnsanIa";
 import problemGoalData from "../../data/problemGoalData";
 
 
@@ -24,6 +25,8 @@ function AnsanDetail() {
       />
       <AnsanOverview />
       <ProjectProblemGoal data={problemGoalData} />
+      <AnsanIa />
+
 
 
 
