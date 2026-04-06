@@ -6,6 +6,9 @@ import AnsanIa from "../../components/ansanDetail/AnsanIa";
 import problemGoalData from "../../data/problemGoalData";
 import ProjectReflection from "../../components/projectDetail/ProjectReflection";
 import reflectionImg from "../../assets/projects/ansan/reflection.png";
+import AnsanMainDesign from "../../components/ansanDetail/AnsanMainDesign";
+import AnsanSubDesign from "../../components/ansanDetail/AnsanSubDesign";
+import AnsanResponsive from "../../components/ansanDetail/AnsanResponsive";
 
 
 import heroImg from "../../assets/projects/ansan/ansan_hero.jpg";
@@ -34,10 +37,9 @@ function AnsanDetail() {
       <AnsanOverview />
       <ProjectProblemGoal data={problemGoalData} />
       <AnsanIa />
-
-
-
-
+      <AnsanMainDesign />
+      <AnsanSubDesign />
+      <AnsanResponsive />
      <ProjectReflection
         title="Reflection"
         body={reflectionText}
