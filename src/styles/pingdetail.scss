@@ -591,7 +591,7 @@
     }
 
     &__card {
-      height: 210px;
+      height: 220px;
       padding: 20px 16px 18px;
     }
 
@@ -604,6 +604,22 @@
     &__card-desc {
       font-size: 13px;
       line-height: 1.65;
+    }
+  }
+  @media (max-width: 420px) {
+    .ping-problem-solution {
+      padding: 42px 0;
+
+      &__card-title {
+        margin-bottom: 8px;
+        font-size: 15px;
+        line-height: 1.4;
+      }
+
+      &__card-desc {
+        font-size: 12px;
+        line-height: 1.65;
+      }
     }
   }
 }

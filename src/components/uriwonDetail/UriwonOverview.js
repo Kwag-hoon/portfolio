@@ -6,7 +6,7 @@ function UriwonOverview() {
     { label: "PROJECT", value: "디자인유리원" },
     { label: "TYPE", value: "Corporate Website" },
     { label: "ROLE", value: "기획 · UX/UI 디자인 · 퍼블리싱 · 배포" },
-    { label: "STACK", value: "HTML · CSS3 · JavaScript · Cafe24" },
+    { label: "STACK", value: "Figma · HTML · CSS3 · JavaScript · Cafe24" },
     { label: "PERIOD", value: "2023.05 - 2023.07" },
   ];
 
@@ -15,7 +15,8 @@ function UriwonOverview() {
       className="uriwon-overview"
       eyebrow="Overview"
       title="디자인유리원 웹사이트 구축 프로젝트"
-      description="디자인유리원 웹사이트는 브랜드와 작업물을 효과적으로 전달할 수 있는 구조가 필요했으며, 이를 위해 전체 기획부터 디자인, 퍼블리싱, 배포까지 전 과정을 단독으로 수행한 프로젝트입니다. 카페24 템플릿을 일부 활용하되, 약 50% 이상을 직접 커스터마이징하여 사이트 구조와 UI를 재구성했습니다. 사용자가 브랜드 소개와 포트폴리오 콘텐츠를 자연스럽게 탐색할 수 있도록 정보 흐름을 정리하고, 가독성과 시각적 완성도를 높이는 데 집중했습니다."
+      description=" 디자인유리원의 브랜드 정체성을 웹 공간에 새롭게 정의하고, 포트폴리오 중심의 사용자 경험을 설계한 프로젝트입니다. 단순한 사이트 구축을 넘어 브랜드 소개와 작업물이 유기적으로 연결될 수 있도록 전체 기획부터 디자인, 퍼블리싱, 최종 배포까지 전 과정을 단독으로 전담하였습니다.
+      특히 카페24 솔루션을 활용하되, 기존 템플릿의 한계를 극복하기 위해 약 50% 이상의 코드를 직접 커스터마이징했습니다. 이를 통해 가독성과 시각적 완성도를 높였으며, 검색 유입을 고려한 SEO 최적화와 콘텐츠 탐색 흐름을 재구성하여 브랜드의 전문성을 효과적으로 전달하는 데 집중했습니다."
       meta={overviewMeta}
       buttonText="사이트 바로가기"
       buttonHref="https://designuriwon.com/default/"

@@ -5,7 +5,7 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: $gray-900;
+  // background: $gray-900;
 
   &__media {
     position: absolute;
@@ -125,12 +125,12 @@
     }
   }
 
-  &--theme-dark,
-  &--theme-default {
-    .project-hero__overlay {
-      background: rgba(17, 24, 39, 0.28);
-    }
-  }
+  // &--theme-dark,
+  // &--theme-default {
+  //   .project-hero__overlay {
+  //     background: rgba(17, 24, 39, 0.28);
+  //   }
+  // }
 
   &--theme-light {
     background: $gray-50;

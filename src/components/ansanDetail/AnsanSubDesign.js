@@ -55,7 +55,7 @@ function SubDesign() {
           <div className="ansan-sub-design__text-group ansan-sub-design__text-group--point">
             <p className="ansan-sub-design__label">👉 핵심</p>
             <p className="ansan-sub-design__point">
-              일관성 + 반응성 ➝ 사용성 강화
+              일관성 + 반복성 ➝ 사용성 강화
             </p>
           </div>
 

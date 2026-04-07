@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectHero from "../../components/project/ProjectHero";
 import UriwonOverview from "../../components/uriwonDetail/UriwonOverview";
+import UriwonProblem from "../../components/uriwonDetail/UriwonProblem";
+
 
 
 import heroImg from "../../assets/projects/designuriwon/uriwon_hero1.jpg";
@@ -12,15 +14,18 @@ function DesignuriwonDetail(props) {
       <ProjectHero
         image={heroImg}
         imageAlt="디자인유리원 프로젝트 메인 이미지"
-        eyebrow="Design uriwon Website Project"
-        subtitle="기획에서 디자인까지 현실로"
-        title="디자인유리원그룹"
-        description="웹사이트 신규 구축 프로젝트"
+        eyebrow="Web UX/UI + SEO + Front-End Implementation"
+        subtitle="Design uriwon Website Project"
+        title=""
+        description="브랜드 정의부터 SEO 구조 설계, 프론트엔드 구현까지 진행한 프로젝트"
         align="center"
         theme="dark"
         className="uriwon-project__hero"
       />
       <UriwonOverview />
+      <UriwonProblem />
+
+
     </main>
   );
 }

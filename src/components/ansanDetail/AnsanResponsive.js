@@ -7,7 +7,7 @@ import mobileImg from "../../assets/projects/ansan/mobile-ansan.jpg";
 
 function ResponsiveDesign() {
   const [sectionRef, isVisible] = useScrollReveal({
-    threshold: 0.15,
+    threshold: 0.08,
     rootMargin: "0px 0px -10% 0px",
   });
 
