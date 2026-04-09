@@ -40,7 +40,7 @@ function AnsanDetail() {
       <AnsanMainDesign />
       <AnsanSubDesign />
       <AnsanResponsive />
-     <ProjectReflection
+      <ProjectReflection
         title="Reflection"
         body={reflectionText}
         image={reflectionImg}

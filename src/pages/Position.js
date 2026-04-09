@@ -37,7 +37,7 @@ const techStacks = [
   },
   {
     title: "Deployment",
-    items: ["AWS", "SEO", "Web Performance"],
+    items: ["AWS", "SEO", "Web Performance","GitHub"],
   },
 ];
 
