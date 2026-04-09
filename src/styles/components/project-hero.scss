@@ -90,17 +90,19 @@
 
   &__description {
     margin: 20px 0 0;
-    max-width: 720px;
+    max-width: 650px;
     color: $gray-100;
     font-size: 18px;
     color: $gray-300;
     // font-weight: 400;
     line-height: 1.6;
     letter-spacing: -0.01em;
+    // white-space: pre-line;
     opacity: 0;
     transform: translateY(20px);
     animation: heroFadeUp 0.8s ease forwards;
     animation-delay: 0.7s;
+
   }
 
   &--align-left {
@@ -199,4 +201,3 @@
     }
   }
 }
-
