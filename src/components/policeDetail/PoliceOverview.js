@@ -13,7 +13,7 @@ function PoliceOverview() {
     <ProjectOverview
       className="police-overview"
       eyebrow="Overview"
-      title="정보 구조 재정비와 공공 웹서비스 구축을 위한 프로젝트 관리"
+      title="경찰대학 치안대학원 웹사이트 구축"
       description={`치안대학원 웹서비스 제공을 위해 사용자 특성에 맞는
 정보 구조 정비와 콘텐츠 체계화가 필요한 상황이었습니다.
 
@@ -25,7 +25,7 @@ function PoliceOverview() {
 웹사이트가 안정적으로 구축될 수 있도록 운영했습니다.`}
       meta={overviewMeta}
       buttonText="사이트 바로가기"
-      buttonHref="https://www.police.ac.kr/"
+      buttonHref="https://grad.police.ac.kr/"
     />
   );
 }
