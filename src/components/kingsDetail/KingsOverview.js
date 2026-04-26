@@ -13,7 +13,7 @@ function KingsOverview() {
     <ProjectOverview
       className="kings-overview"
       eyebrow="Overview"
-      title="한국원자력대학원대학교 홈페이지 신규 구축"
+      title="한국전력 원자력대학원대학교 홈페이지 구축"
       description={`기존 홈페이지는 노후화된 구조와 비효율적인 정보 구성으로 인해 사용자가 원하는 정보를 찾기 어려운 상태였습니다.
 
       본 프로젝트에서는 전체 콘텐츠 구조를 재정비하고,
