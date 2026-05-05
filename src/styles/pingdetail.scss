@@ -606,6 +606,7 @@
       line-height: 1.65;
     }
   }
+
   @media (max-width: 420px) {
     .ping-problem-solution {
       padding: 42px 0;
@@ -1243,7 +1244,8 @@
       transform: scale(1.08);
     }
   }
-&__marker-content {
+
+  &__marker-content {
     position: absolute;
     inset: 0;
     display: flex;
@@ -1321,6 +1323,7 @@
     left: 4.5%;
   }
 }
+
 .ping-workflow-hero {
   &__marker-content {
     position: absolute;
@@ -1357,6 +1360,7 @@
     transform: translateX(-5px) translateY(-40px);
   }
 }
+
 @media (max-width: 1024px) {
   .ping-workflow-hero {
     padding: 96px 0;
@@ -1388,6 +1392,7 @@
     &__diagram {
       grid-column: 2 / 12;
     }
+
     &__marker-id {
       font-size: 24px;
     }
@@ -1431,6 +1436,7 @@
     &__marker.is-active {
       transform: scale(1.05);
     }
+
     &__marker-id {
       font-size: 24px;
     }
@@ -1485,27 +1491,28 @@
     box-shadow: 0 16px 28px rgba(17, 24, 39, 0.14);
   }
 
- &__image-wrap--e {
-  position: relative;
-  min-height: 520px;
-}
+  &__image-wrap--e {
+    position: relative;
+    min-height: 520px;
+  }
 
-&__image--left {
-  position: relative;
-  z-index: 1;
-  width: 80%;
-  box-shadow: 0 16px 28px rgba(17, 24, 39, 0.14);
-}
+  &__image--left {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    box-shadow: 0 16px 28px rgba(17, 24, 39, 0.14);
+  }
 
-&__image--right {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  bottom: -40px;
-  right: 0;
-  width: 100%;
-  box-shadow: 0 20px 36px rgba(17, 24, 39, 0.18);
-}
+  &__image--right {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    bottom: -40px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 20px 36px rgba(17, 24, 39, 0.18);
+  }
+
   &__content {
     grid-column: 7 / 13;
     position: relative;
@@ -1678,7 +1685,8 @@
     &__content {
       grid-column: 1 / -1;
     }
-/* 🔥 E 전용 구조 재정의 */
+
+    /* 🔥 E 전용 구조 재정의 */
     &__section--e {
       display: flex;
       flex-direction: column;
@@ -1697,6 +1705,7 @@
       padding-top: 60px;
       text-align: left;
     }
+
     &__content {
       padding-top: 28px;
     }
@@ -1789,9 +1798,9 @@
       font-size: 14px;
       line-height: 1.75;
     }
-    
+
   }
-  
+
 }
 
 /* =========================
@@ -1930,7 +1939,7 @@ admin-system
 
     &__top-side {
       width: 32%;
-      
+
       bottom: 16px;
 
       &--left {
@@ -2106,5 +2115,206 @@ admin-system
 
   .reveal-item--delay-2 {
     transition-delay: 0.3s;
+  }
+}
+
+/* =========================
+figma_make (프로토타입)
+========================= */
+.ping-figma-make {
+  padding: 120px 0;
+  background: $gray-200;
+  overflow: hidden;
+
+  &__container {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 36px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    grid-column: 1 / span 5;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  &__visual {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    grid-column: 6 / span 7;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease 0.12s, transform 0.8s ease 0.12s;
+  }
+
+  &__image {
+    transition: transform 0.45s ease, filter 0.45s ease;
+  }
+
+  &__visual:hover {
+    .ping-figma-make__image {
+      transform: translateY(-4px);
+      filter: brightness(0.98);
+    }
+  }
+
+  &.is-visible {
+
+    .ping-figma-make__content,
+    .ping-figma-make__visual {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__title {
+    margin: 0 0 42px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $gray-700;
+
+    span {
+      color: $color-primary-200;
+    }
+  }
+
+  &__text {
+    max-width: 520px;
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 400;
+      color: $gray-700;
+      word-break: keep-all;
+
+      &+p {
+        margin-top: 28px;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    min-width: 210px;
+    height: 56px;
+    margin-top: 54px;
+    padding: 0 24px;
+    border: 1px solid $gray-700;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    color: $gray-800;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: color 0.3s ease, border-color 0.3s ease,
+      background 0.3s ease, transform 0.3s ease;
+
+    span {
+      font-size: 24px;
+      line-height: 1;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      color: $gray-100;
+      border-color: $gray-900;
+      background: $gray-900;
+      transform: translateY(-2px);
+
+      span {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ping-figma-make {
+    padding: 100px 0;
+
+    &__container {
+      grid-template-columns: repeat(8, 1fr);
+      gap: 20px;
+      padding: 0 28px;
+    }
+
+    &__content {
+      grid-column: 1 / span 8;
+    }
+
+    &__visual {
+      grid-column: 1 / span 8;
+      margin-top: 56px;
+    }
+
+    &__text {
+      max-width: 680px;
+    }
+
+    &__title {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ping-figma-make {
+    padding: 80px 0;
+
+    &__container {
+      display: block;
+      padding: 0 20px;
+    }
+
+    &__title {
+      margin-bottom: 28px;
+      font-size: 26px;
+    }
+
+    &__text {
+      max-width: none;
+
+      p {
+        font-size: 14px;
+        line-height: 1.9;
+
+        &+p {
+          margin-top: 22px;
+        }
+      }
+    }
+
+    &__button {
+      width: 100%;
+      height: 52px;
+      margin-top: 40px;
+      gap: 0;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    &__visual {
+      margin-top: 48px;
+    }
   }
 }

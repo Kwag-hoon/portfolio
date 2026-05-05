@@ -5,6 +5,8 @@ import PingProblemSolution from "../../components/projectDetail/PingProblemSolut
 import DetailTripleSection from "../../components/projectDetail/DetailTripleSection";
 import PingIA from "../../components/projectDetail/PingIA";
 import PingWorkflowHero from "../../components/projectDetail/PingWorkflowHero";
+import PingFigmaMake from "../../components/projectDetail/PingFigmaMake";
+
 import PingWorkflowDetail from "../../components/projectDetail/PingWorkflowDetail";
 import PingAdminSystem from "../../components/projectDetail/PingAdminSystem";
 import ProjectReflection from "../../components/projectDetail/ProjectReflection";
@@ -77,6 +79,8 @@ function PingDetail() {
       />
       {/* IA */}
       <PingIA />
+      {/* Figma Make */}
+      <PingFigmaMake />
       {/* Workflow Hero */}
       <PingWorkflowHero />
       {/* Workflow Detail */}
