@@ -10,6 +10,8 @@ export const workExperience = [
         title: 'UI/UX 기획 · 프론트엔드 기반 웹 구축',
         description: [
           '기업 웹사이트 기획부터 구현까지 전 과정 수행 (브랜딩 ·UX·퍼블리싱)',
+          'ChatGPT 기반 기획 문서 정리 및 화면 구조 개선',
+          '기획-디자인-개발 산출물 작성 과정에 AI 활용',
           'HTML/CSS 기반 반응형 웹 구조 설계 및 구현',
           '서비스 IA 설계 및 사용자 흐름 정리',
           '메타 태그 및 검색 구조 최적화 작업 수행',
@@ -19,7 +21,7 @@ export const workExperience = [
     ],
   },
   {
-    company: 'STT Trading co. (Freelance)',
+    company: 'STT Trading Co. (Freelance)',
     period: '21.12 - 22.02',
     roles: [
       {
@@ -59,11 +61,11 @@ export const workExperience = [
     ],
   },
   {
-    company: 'STT Trading co.',
+    company: 'STT Trading Co.',
     period: '16.09 - 17.11',
     roles: [
       {
-        title: 'Online 쇼핑몰 운영 및 관리',
+        title: '온라인 쇼핑몰 운영 및 관리',
         description: [
           '쇼핑몰 운영 및 상품/콘텐츠 관리',
           '소셜 미디어 채널 운영 및 프로모션 수행',
@@ -94,6 +96,7 @@ export const education = [
     lines: [
       '[프로젝트기반]프론트엔드 개발자 양성',
       'Figma/React/Next.js/PHP/Mysql/chatGPT',
+      'Figma / AI 도구를 활용한 prototype 제작',
     ],
   },
   {

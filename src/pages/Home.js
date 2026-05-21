@@ -16,18 +16,18 @@ export default function Home() {
         <div className={`home-hero__inner ${show ? "is-visible" : ""}`}>
   
           <h2 className="home-hero__title">
-            사용자 경험과 비즈니스 목표를 연결하는
+            사용자 흐름과 운영구조를 설계하는
             <br />
-            Product 기획자
+            서비스 기획자
           </h2>
   
           <p className="home-hero__subtitle">
-            UX 전략· 서비스 구조 설계 · 구현 이해 기반 기획
+            UX 전략 · 문제 정의 · IA · 화면 설계 · 구현 협업까지 연결합니다.
           </p>
   
           <div className="home-hero__buttons">
             <Link to="/projects" className="btn-outline">
-              Project →
+              Projects →
             </Link>
   
             <Link to="/position" className="btn-outline">

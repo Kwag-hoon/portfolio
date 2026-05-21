@@ -9,7 +9,7 @@ import policeThumb from '../assets/projects/police/police_Thumbnail.jpg';
 export const projectTabs = [
   'All',
   'Public',
-  'Architecture',
+  'UX/IA',
   'Strategy',
   'Build',
 ];
@@ -17,7 +17,7 @@ export const projectTabs = [
 export const projectsData = [
   {
     id: 'ping',
-    categories: ['Architecture', 'Strategy', 'Build'],
+    categories: ['UX/IA', 'Strategy', 'Build'],
     type: 'private',
     title: 'PING',
     subtitle: '문제 유형 기반 디자인 피드백 커뮤니티',
@@ -31,7 +31,7 @@ export const projectsData = [
   },
   {
     id: 'ansan',
-    categories: ['Public', 'Architecture', 'Strategy', 'Build'],
+    categories: ['Public', 'UX/IA', 'Strategy', 'Build'],
     type: 'public',
     title: '안산미래연구원',
     subtitle: '웹사이트 구축',
@@ -45,7 +45,7 @@ export const projectsData = [
   },
   {
     id: 'designuriwon',
-    categories: ['Architecture', 'Strategy', 'Build'],
+    categories: ['UX/IA', 'Strategy', 'Build'],
     type: 'private',
     title: '디자인 유리원',
     subtitle: '웹사이트 구축',
@@ -59,7 +59,7 @@ export const projectsData = [
   },
   {
     id: 'kings',
-    categories: ['Public', 'Architecture', 'Strategy'],
+    categories: ['Public', 'UX/IA', 'Strategy'],
     type: 'public',
     title: 'KINGS 웹사이트 구축',
     subtitle: '한국전력 국제원자력대학원대학교',
@@ -73,7 +73,7 @@ export const projectsData = [
   },
   {
     id: 'police',
-    categories: ['Public', 'Architecture', 'Strategy'],
+    categories: ['Public', 'UX/IA', 'Strategy'],
     type: 'public',
     title: '경찰대학 치안대학원',
     subtitle: '웹사이트 구축',

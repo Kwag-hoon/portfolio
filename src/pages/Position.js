@@ -5,39 +5,39 @@ import "../styles/position.scss";
 
 const workSkills = [
   {
-    title: "Product Strategy",
-    items: ["문제 정의", "서비스 전략 수립", "비즈니스 구조 설계"],
+    title: "Service Strategy",
+    items: ["문제 정의", "서비스 전략 수립", "요구사항 구조화", "데이터 기반 개선점 도출"],
   },
   {
     title: "Information Architecture",
-    items: ["정보 구조 설계", "사용자 흐름 설계", "기능 구조 정의"],
+    items: ["정보 구조 설계", "사용자 흐름 설계", "기능 구조 정의", "콘텐츠 구조화"],
   },
   {
     title: "UX Planning",
-    items: ["Wireframe", "사용자 경험 설계", "프로토타이핑"],
+    items: ["Wireframe", "화면 기획", "사용자 시나리오 설계", "Prototype"],
   },
   {
     title: "Technical Understanding",
-    items: ["React 기반 UI 구현", "API 연동 이해", "컴포넌트 구조 설계"],
+    items: ["React 기반 화면 구조 이해", "API 연동 흐름 이해", "컴포넌트 단위 설계 이해", "배포·성능·SEO 개선 경험"],
   },
 ];
 
 const techStacks = [
   {
     title: "Frontend",
-    items: ["React", "JavaScript (ES6+)", "HTML5", "CSS3(SCSS)", "PHP"],
+    items: ["React", "JavaScript (ES6+)", "HTML5", "CSS3(SCSS)"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "REST API", "MySQL"],
+    items: ["Node.js", "PHP", "REST API", "MySQL"],
   },
   {
-    title: "Design",
-    items: ["Figma", "Wireframe", "Prototype"],
+    title: "UX/UI Planning",
+    items: ["Figma", "Wireframe", "Prototype", "UX Flow"],
   },
   {
-    title: "Deployment",
-    items: ["AWS", "SEO", "Web Performance","GitHub"],
+    title: "Deployment & Optimization",
+    items: ["AWS", "GitHub" , "SEO", "Web Performance"],
   },
 ];
 

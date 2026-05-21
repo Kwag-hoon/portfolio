@@ -58,7 +58,7 @@ function Resume() {
           <div className="resume-layout__col resume-layout__col--left">
             <section className="resume-section reveal-group" ref={workRef}>
               <h3 className="resume-section__title reveal-item delay-0">
-                Work experience<span className="point">.</span>
+                Work Experience<span className="point">.</span>
               </h3>
 
               <div className="timeline timeline--work">
