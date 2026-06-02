@@ -1,6 +1,7 @@
 // src/data/projectsData.js
 
 import pingThumb from '../assets/projects/ping/ping_Thumbnail.jpg';
+import plantThumb from '../assets/projects/plant/plant_Thumbnail.jpg';
 import ansanThumb from '../assets/projects/ansan/ansan_Thumbnail.jpg';
 import designThumb from '../assets/projects/designuriwon/uriwon_Thumbnail.jpg';
 import kingsThumb from '../assets/projects/kings/kings_Thumbnail.jpg';
@@ -21,14 +22,29 @@ export const projectsData = [
     type: 'private',
     title: 'PING',
     subtitle: '문제 유형 기반 디자인 피드백 커뮤니티',
-    eyebrow: 'WEB Platform',
-    overlayTitle: '문제 유형 기반 디자인\n피드백 커뮤니티',
+    eyebrow: 'SERVICE PLANNING · WEB PLATFORM',
+    overlayTitle: '디자인 피드백을\n구조화한 플랫폼',
     overlayDescription:
-      '디자인 피드백을\n핀(Pin) 기반으로 기록하고\n문제 유형별로 구조화하는\nUX 피드백 플랫폼',
-    meta: 'UX/UI Planning · FigmaDesign · React · Node.js · MySQL',
+      '디자인 피드백이\n 결과물 중심으로 소비되는 문제를\nPin 기반 위치 지정과\n문제 유형 분류 구조로 정리한\n서비스 기획 프로젝트',
+    meta: 'Service Planning · IA · UX Flow · UI Design · React',
     thumbnail: pingThumb,
     href: '/projects/ping',
   },
+{
+    id: 'plant',
+    categories: ['UX/IA', 'Strategy'],
+    type: 'private',
+    title: 'PLANT',
+    subtitle: '위치 기반 식물 거래·관리 플랫폼',
+    eyebrow: 'SERVICE PLANNING · APP PLATFORM',
+    overlayTitle: '위치 기반\n식물 거래·관리 플랫폼',
+    overlayDescription:
+      '식물 구매자와 판매자의\n 문제를 나누어 정의하고,\n 위치 기반 탐색·스마트 오더·식물 관리 \n흐름으로 설계한\n2023 R&D 첫걸음 기업연구소 지원사업 프로젝트',
+    meta: 'Service Planning · UX Strategy · Business Model',
+    thumbnail: plantThumb,
+    pdfUrl: "/pdf/dongnaeplant_portfol.pdf",
+  },
+
   {
     id: 'ansan',
     categories: ['Public', 'UX/IA', 'Strategy', 'Build'],
@@ -57,6 +73,7 @@ export const projectsData = [
     thumbnail: designThumb,
     href: '/projects/designuriwon',
   },
+
   {
     id: 'kings',
     categories: ['Public', 'UX/IA', 'Strategy'],

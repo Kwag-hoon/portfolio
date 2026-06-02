@@ -18,11 +18,11 @@ export default function Home() {
           <h2 className="home-hero__title">
             사용자 흐름과 운영구조를 설계하는
             <br />
-            서비스 기획자
+            서비스 기획자  <span style={{color: 'var(--color-primary-200)'}}>곽 훈</span>입니다
           </h2>
   
           <p className="home-hero__subtitle">
-            UX 전략 · 문제 정의 · IA · 화면 설계 · 구현 협업까지 연결합니다.
+            UX 전략 · 문제 정의 · IA · 화면 정책 · 구현 협업까지 고려해 실행 가능한 서비스 구조를 설계합니다.
           </p>
   
           <div className="home-hero__buttons">

@@ -74,16 +74,9 @@ function Projects() {
 
         <div className="projects-list reveal-group" ref={listRef}>
           <div className="projects-list__grid grid">
-            {filteredProjects.map((project, index) => (
-              <div
-                key={project.id}
-                className={`projects-list__item reveal-item delay-${index % 5}`}
-              >
-                <Link
-                  to={project.href}
-                  className="project-card"
-                  aria-label={`${project.title} 상세 페이지 이동`}
-                >
+            {filteredProjects.map((project, index) => {
+              const projectCardInner = (
+                <>
                   <div className="project-card__thumb">
                     <img
                       src={project.thumbnail}
@@ -111,9 +104,36 @@ function Projects() {
                       <p className="project-card__meta">{project.meta}</p>
                     </div>
                   </div>
-                </Link>
-              </div>
-            ))}
+                </>
+              );
+
+              return (
+                <div
+                  key={project.id}
+                  className={`projects-list__item reveal-item delay-${index % 5}`}
+                >
+                  {project.pdfUrl ? (
+                    <a
+                      href={project.pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-card"
+                      aria-label={`${project.title} PDF 포트폴리오 열기`}
+                    >
+                      {projectCardInner}
+                    </a>
+                  ) : (
+                    <Link
+                      to={project.href}
+                      className="project-card"
+                      aria-label={`${project.title} 상세 페이지 이동`}
+                    >
+                      {projectCardInner}
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
 

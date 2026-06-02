@@ -7,7 +7,7 @@ function UriwonOverview() {
     { label: "TYPE", value: "Corporate Website" },
     { label: "ROLE", value: "기획 · UX/UI 디자인 · 퍼블리싱 · 배포" },
     { label: "STACK", value: "Figma · HTML · CSS3 · JavaScript · Cafe24" },
-    { label: "PERIOD", value: "2023.05 - 2023.07" },
+    { label: "PERIOD", value: "2023.12 - 2024.02" },
   ];
 
   return (
