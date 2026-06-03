@@ -2327,7 +2327,8 @@ figma_make (프로토타입)
 .ping-background {
   padding: 120px 0;
   background: $gray-100;
-.reveal {
+
+  .reveal {
     opacity: 0;
     transform: translateY(36px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -2351,7 +2352,7 @@ figma_make (프로토타입)
   .reveal--delay-3 {
     transition-delay: 0.3s;
   }
-  
+
   &__container {
     max-width: 1512px;
     margin: 0 auto;
@@ -2371,7 +2372,7 @@ figma_make (프로토타입)
     font-weight: 600;
     color: $gray-500;
     letter-spacing: -0.03em;
-    
+
   }
 
   &__grid {
@@ -2391,7 +2392,7 @@ figma_make (프로토타입)
   &__card {
     box-sizing: border-box;
     overflow: hidden;
-    
+
   }
 
   &__card--light {
@@ -2416,7 +2417,7 @@ figma_make (프로토타입)
 
     p {
       margin: 0;
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.4;
       font-weight: 400;
       color: $gray-500;
@@ -2459,7 +2460,7 @@ figma_make (프로토타입)
     }
 
     li {
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.7;
       font-weight: 400;
       color: $gray-500;
