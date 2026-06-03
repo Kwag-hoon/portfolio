@@ -1,11 +1,13 @@
 import React from "react";
 import PingHero from "../../components/projectDetail/PingHero";
 import PingOverview from "../../components/projectDetail/PingOverview";
+
 import PingProblemSolution from "../../components/projectDetail/PingProblemSolution";
 import DetailTripleSection from "../../components/projectDetail/DetailTripleSection";
 import PingIA from "../../components/projectDetail/PingIA";
 import PingWorkflowHero from "../../components/projectDetail/PingWorkflowHero";
 import PingFigmaMake from "../../components/projectDetail/PingFigmaMake";
+import PingBackground from "../../components/projectDetail/PingBackground";
 
 import PingWorkflowDetail from "../../components/projectDetail/PingWorkflowDetail";
 import PingAdminSystem from "../../components/projectDetail/PingAdminSystem";
@@ -63,6 +65,7 @@ function PingDetail() {
     <main className="ping-detail">
       <PingHero />
       <PingOverview />
+      <PingBackground />  
       <PingProblemSolution />
       {/* Core Value */}
       <DetailTripleSection
